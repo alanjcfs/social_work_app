@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  intake: MyText
+  social_worker_id: 1
+
+two:
+  intake: MyText
+  social_worker_id: 1
