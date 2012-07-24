@@ -1,4 +1,6 @@
 SocialWorkApp::Application.routes.draw do
+  resources :social_workers
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,27 @@
+<h1>Listing social_workers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @social_workers.each do |social_worker| %>
+  <tr>
+    <td><%= social_worker.name %></td>
+    <td><%= social_worker.email %></td>
+    <td><%= social_worker.title %></td>
+    <td><%= link_to 'Show', social_worker %></td>
+    <td><%= link_to 'Edit', edit_social_worker_path(social_worker) %></td>
+    <td><%= link_to 'Destroy', social_worker, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Social worker', new_social_worker_path %>
