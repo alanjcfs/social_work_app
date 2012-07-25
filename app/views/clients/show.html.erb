@@ -1,15 +1,35 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Intake:</b>
-  <%= @client.intake %>
+  <b>Social worker:</b>
+  <!-- <%= @client.social_worker_id %> -->
+  <%= @client.social_worker.name %>
 </p>
 
 <p>
-  <b>Social worker:</b>
-  <%= @client.social_worker_id %>
+	<b>Birthdate: </b>
+	<%= @client.birthdate %><br>
+
+	<b>Gender: </b>
+	<%= @client.gender %><br>
+
+	<b>Email: </b>
+	<%= @client.email %><br>
+
+	<b>Case number: </b>
+	<%= @client.case_number %><br>
+
+	<b>Case date: </b>
+	<%= @client.case_date %><br>
+
+	<b>Case completion date: </b>
+	<%= @client.case_completed %><br>
 </p>
 
+<p>
+  <b>Intake:</b>
+  <%= @client.intake %>
+</p>
 
 <%= link_to 'Edit', edit_client_path(@client) %> |
 <%= link_to 'Back', clients_path %>

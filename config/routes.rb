@@ -3,6 +3,8 @@ SocialWorkApp::Application.routes.draw do
 
   resources :social_workers
 
+  root :to => 'social_workers#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

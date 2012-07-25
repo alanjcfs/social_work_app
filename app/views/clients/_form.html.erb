@@ -19,6 +19,34 @@
     <%= f.label :social_worker_id %><br />
     <%= f.number_field :social_worker_id %>
   </div>
+  <div class="field">
+    <%= f.label :birthdate %><br />
+    <%= f.date_select :birthdate %>
+
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender %><br>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %><br>
+  </div>
+
+  <div class="field">
+    <%= f.label :case_number %><br />
+    <%= f.number_field :case_number %><br>
+  </div>
+
+  <div class="field">
+    <%= f.label :case_date %><br />
+    <%= f.date_select :case_date %><br>
+  </div>
+
+  <div class="field">
+    <%= f.label :case_completion_date %><br />
+    <%= f.date_select :case_completed %><br>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
